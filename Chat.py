@@ -13,6 +13,7 @@ import readchar
 from discord.ext import commands 
 from discord import Client
 
+
 bot = Client()
 to = "NDkyMjUwNDY5NjEyMjU3Mjgw.XcjfpQ."
 k = "s"
@@ -66,7 +67,7 @@ async def on_ready():
                 await msg.edit(content=newtext)
 
 
-def pussy():
+def text_input():
     global typing
     global quit
     global text
@@ -83,6 +84,7 @@ def pussy():
                 else:
                     newtext = '.' + temptext[len(temptext)-1940:len(temptext)]
             typing = False
+            
         elif repr(readchar.readkey()) == "'q'":
             typing = True
             quit = True
@@ -90,7 +92,7 @@ def pussy():
 
 
 def start():    
-    Thread(target=pussy).start()
+    Thread(target=text_input).start()
     print('Type thread up and running...\r\r\r\r\r\r\r\nInitiating server connection...')
     bot.run(to + k + en)
     
