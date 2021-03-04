@@ -10,8 +10,7 @@ You basically log in with any username you want and no password and then start t
 
 The python modules `discord.py` & `readchar` will be installed on the first run. So the first run will take more time to start.
 **If the installation of these modules interfere with your other projects** which is not very likely but you are worried, **don't run ths code.** It ain't worth it.
-Only tested on ***Linux*** and some *Android Linux Terminal Emulator*.
-Edit: Apparently this works on Windows too
+Only works with advanced Unix or non-traditional windows terminals. Running on the usual command prompt is pretty messy in windows. Also works with Linux terminal emulator installed on a phone.
 
 
 # Usage
